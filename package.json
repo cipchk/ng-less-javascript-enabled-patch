@@ -1,0 +1,39 @@
+{
+  "name": "ng-less-javascript-enabled-patch",
+  "version": "0.0.3",
+  "description": "Fix +Angular17 Less not supporting `javascriptEnabled`",
+  "main": "index.js",
+  "bin": {
+    "ng-less-javascript-enabled-patch": "index.js"
+  },
+	"sideEffects": false,
+  "author": "cipchk",
+  "publisher": "cipchk",
+  "license": "MIT",
+  "licenseUrl": "LICENSE",
+  "homepage": "https://github.com/cipchk/ng-less-javascript-enabled-patch/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cipchk/ng-less-javascript-enabled-patch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cipchk/ng-less-javascript-enabled-patch/issues",
+    "email": "cipchk@qq.com"
+  },
+  "scripts": {
+    "build": "bash ./build.sh",
+    "build:test": "bash ./build.sh -t",
+    "release": "bash ./build.sh && cd dist && npm publish"
+  },
+  "schematics": "./collection.json",
+  "peerDependencies": {
+    "@angular-devkit/schematics": "^17.0.0",
+    "ansi-colors": "^4.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/schematics": "^17.0.0",
+    "ansi-colors": "^4.0.0",
+    "typescript": "^5.3.3",
+    "@types/node": "^12.0.10"
+  }
+}
