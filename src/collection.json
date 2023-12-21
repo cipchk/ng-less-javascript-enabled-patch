@@ -3,7 +3,8 @@
     "ng-add": {
       "factory": "./ng-add",
       "description": "Add ng-less-javascript-enabled-patch",
-      "schema": "./ng-add/schema.json"
+      "schema": "./ng-add/schema.json",
+      "save": "devDependencies"
     }
   }
 }
