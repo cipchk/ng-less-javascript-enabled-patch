@@ -1,6 +1,6 @@
 {
   "name": "ng-less-javascript-enabled-patch",
-  "version": "17.0.1",
+  "version": "17.0.2",
   "description": "Fix +Angular17 Less not supporting `javascriptEnabled`",
   "main": "index.js",
   "bin": {
@@ -27,7 +27,6 @@
   },
   "schematics": "./collection.json",
   "peerDependencies": {
-    "@angular-devkit/schematics": "^17.0.0",
     "ansi-colors": "^4.0.0"
   },
   "devDependencies": {
