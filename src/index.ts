@@ -8,7 +8,13 @@ const appPath = getAppRootPath();
 
 function run() {
   const lessLangPath = join(appPath, 'node_modules/@angular-devkit/build-angular/src/tools/esbuild/stylesheets/less-language.js');
-  if (!existsSync(lessLangPath)) throw new Error(`Not found ${lessLangPath}`);
+  if (!existsSync(lessLangPath)) {
+    const tips = `Not found ${lessLangPath}, ignore change angular-cli LESS no longer supports javascript by default`;
+    console.error(tips);
+    console.error(tips);
+    console.error(tips);
+    return;
+  }
 
   const content = readFileSync(lessLangPath).toString('utf8');
   const code = `/* unsafeInlineJavaScript */ false`;
